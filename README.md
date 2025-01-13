@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Sistema de Reservaciones - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositorio contiene la implementación del frontend para el sistema de reservaciones, desarrollado con React. Este frontend interactúa con el backend del sistema y proporciona una interfaz para gestionar clientes, horarios disponibles, horarios reservados y reservaciones.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Descripción del Proyecto**
 
-### `npm start`
+El frontend está diseñado para ser simple y funcional, permitiendo a los usuarios realizar las siguientes acciones:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clientes**:
+   - Crear, leer, actualizar y eliminar clientes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Horarios Disponibles**:
+   - Gestionar los horarios que se pueden reservar.
 
-### `npm test`
+3. **Horarios de Reserva**:
+   - Gestionar los horarios que han sido reservados.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Reservaciones**:
+   - Crear, leer, actualizar y eliminar reservaciones.
 
-### `npm run build`
+El diseño se enfoca en la claridad y la facilidad de uso, con componentes reutilizables y estilos básicos en CSS.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## **Características Técnicas**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Framework**
+- **React**: Desarrollo basado en componentes.
 
-### `npm run eject`
+### **Estilos**
+- **CSS**: Estilos básicos para una interfaz limpia y funcional.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Consumo de API**
+- **Axios**: Para realizar peticiones HTTP al backend.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Interacción con el Backend**
+El frontend se conecta al backend del sistema desarrollado en Spring Boot, que puedes encontrar en el siguiente repositorio:  
+[Repositorio Backend - prueba-riservi-backend](https://github.com/JJAR140201/prueba-riservi-backend)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## **Componentes Principales**
 
-## Learn More
+1. **Gestión de Clientes**
+   - Componente: `Cliente`
+   - Funcionalidad: Permite ver, agregar, editar y eliminar clientes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Gestión de Horarios Disponibles**
+   - Componente: `HorarioDisponible`
+   - Funcionalidad: Permite gestionar los horarios disponibles para reservaciones.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Gestión de Horarios de Reserva**
+   - Componente: `HorarioReserva`
+   - Funcionalidad: Permite gestionar los horarios ya reservados.
 
-### Code Splitting
+4. **Gestión de Reservaciones**
+   - Componente: `Reservacion`
+   - Funcionalidad: Permite ver, crear, editar y eliminar reservaciones.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## **Instrucciones de Configuración**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **Requisitos Previos**
+- Tener **Node.js** instalado.
+- Asegurarse de que el backend esté ejecutándose en `http://localhost:8080`.
 
-### Making a Progressive Web App
+### **Pasos de Configuración**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/JJAR140201/prueba-riservi-frontend.git
