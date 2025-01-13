@@ -58,17 +58,3 @@ El frontend se conecta al backend del sistema desarrollado en Spring Boot, que p
 4. **Gestión de Reservaciones**
    - Componente: `Reservacion`
    - Funcionalidad: Permite ver, crear, editar y eliminar reservaciones.
-
----
-
-## **Instrucciones de Configuración**
-
-### **Requisitos Previos**
-- Tener **Node.js** instalado.
-- Asegurarse de que el backend esté ejecutándose en `http://localhost:8080`.
-
-### **Pasos de Configuración**
-
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/JJAR140201/prueba-riservi-frontend.git
